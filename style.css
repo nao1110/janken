@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background: linear-gradient(180deg, #f5f7fa, #eaf0f6);
+  color: #264653;
+  text-align: center;
+  padding: 40px 20px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.9em;
+  color: #264653;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.05em;
+  background-color: #ffffff;
+  border-left: 5px solid #f4a261;
+  padding: 16px;
+  margin: 20px auto;
+  max-width: 640px;
+  color: #444;
+  text-align: left;
+  border-radius: 6px;
+  line-height: 1.6;
+}
+
+.centered-box {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.naoko-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.naoko-photo {
+  width: 90px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #f4a261;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.bubble {
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 14px 18px;
+  max-width: 280px;
+  color: #264653;
+  font-weight: normal;
+  position: relative;
+  font-size: 1em;
+  text-align: left;
+  transition: opacity 0.3s ease;
+}
+
+.bubble::after {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 50

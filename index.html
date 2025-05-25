@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>プログラミングの息抜きに、Naokoとじゃんけん！</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="stars"></div>
+
+  <h1 class="centered-box">プログラミングの息抜きに、Naokoとじゃんけん！</h1>
+
+  <p class="description centered-box">
+    このアプリでは、Naokoさんとじゃんけんでちょっとしたリフレッシュができます。<br>
+    グー・チョキ・パーのボタンをクリックして勝負！<br>
+    結果は毎回違うセリフと一緒に表示されます🌟
+  </p>
+
+  <div class="naoko-area">
+    <img src="naoko.JPG" alt="Naokoさんの写真" class="naoko-photo" />
+    <div class="bubble" id="bubble">さあ、じゃんけん勝負！</div>
+  </div>
+
+  <div class="buttons">
+    <button onclick="play('グー')">✊ グー</button>
+    <button onclick="play('チョキ')">✌️ チョキ</button>
+    <button onclick="play('パー')">🖐️ パー</button>
+  </div>
+
+  <div id="result" class="result centered-box"></div>
+
+  <div class="score-board centered-box">
+    <p>あなたの勝ち：<span id="win">0</span></p>
+    <p>Naokoの勝ち：<span id="lose">0</span></p>
+    <p>あいこ：<span id="draw">0</span></p>
+  </div>
+
+  <footer>✨ Made with 💖 by Naoko ✨</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
